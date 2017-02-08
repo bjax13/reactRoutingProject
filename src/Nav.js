@@ -5,8 +5,12 @@ class Nav extends React.Component {
   render() {
     return (
       <div className='nav-bar'>
-        <a> Home </a>
-        <a> Store  </a>
+        <Link to="/" > Home</Link>
+        <Link to="/store" > Store</Link>
+
+        <div>
+          {this.props.children}
+        </div>
       </div>
     )
   }
